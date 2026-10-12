@@ -1,0 +1,87 @@
+# ==========================================================
+# NCU-Human-AI-Programming · 课程仓库忽略规则
+# 作用：告诉 Git "这些文件别进版本库"
+# ==========================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# 虚拟环境（每个人的环境不同，不该上传）
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
+*.ipynb
+
+# ---------- 敏感信息 ----------
+# API Key、密码、令牌一律不上传，这是硬规矩
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+config.local.*
+api_key.txt
+
+# ---------- Node.js（若用到前端工具） ----------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ---------- 数据与产出 ----------
+# 原始数据与中间结果体积大、可复现，不进仓库
+data/raw/
+data/output/
+output/
+results/
+*.csv
+*.xlsx
+*.db
+*.sqlite3
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统 ----------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# ---------- 日志与缓存 ----------
+*.log
+logs/
+.cache/
+pytest_cache/
+.mypy_cache/
+.ruff_cache/
