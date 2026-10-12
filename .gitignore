@@ -78,6 +78,9 @@ $RECYCLE.BIN/
 .fuse_hidden*
 .directory
 
+# ---------- 工具数据目录 ----------
+.workbuddy/
+
 # ---------- 日志与缓存 ----------
 *.log
 logs/
